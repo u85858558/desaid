@@ -16,6 +16,10 @@ class CreateGroupsTable extends Migration
         Schema::create('groups', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            $table->foreignId('owner_id')->references('id')->on('users');
+            $table->string('name');
+            $table->string('banner_picture')->nullable();
         });
     }
 
