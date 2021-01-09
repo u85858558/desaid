@@ -55,18 +55,18 @@
                         @enderror
                     </div>
 
-                    {{-- change picture --}}
+                    {{-- change profile_picture --}}
                     <div class="row pt-3">
-                        <label for="picture" class="col-md-4 col-form-label"
+                        <label for="profile_picture" class="col-md-4 col-form-label"
                         >
                             profile picture
                         </label>
-                        <input name="picture"
-                        type="file" class="form-control-file" id="picture"
+                        <input name="profile_picture"
+                        type="file" class="form-control-file" id="profile_picture"
                         >
 
-                        @error('picture')
-                            <strong>{{ $error->first('picture') }}</strong>
+                        @error('profile_picture')
+                            <strong>{{ $error->first('profile_picture') }}</strong>
                         @enderror
                     </div>
 
