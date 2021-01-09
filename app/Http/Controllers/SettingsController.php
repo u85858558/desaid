@@ -84,6 +84,7 @@ class SettingsController extends Controller
                     'dimensions:min_width=250,min_height=250,'.
                         'max_width=5000,max_height=5000',
             ],
+            'remove_profile_picture' => '',
         ]);
 
         if ( $request->has('profile_picture')) {
@@ -101,6 +102,11 @@ class SettingsController extends Controller
 
             $validate_data = array_merge(
                 $validate_data, ['profile_picture' => $image_path]
+            );
+        } else if ( $request->has('remove_profile_picture') ) {
+            unset($validate_data['remove_profile_picture']);
+            $validate_data = array_merge(
+                $validate_data, ['profile_picture' => null]
             );
         }
 
