@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <form action="/profile" enctype="multipart/form-data" method="post">
+        <form action="/settings" enctype="multipart/form-data" method="post">
             @csrf
             @method('PATCH')
 
