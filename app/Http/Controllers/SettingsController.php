@@ -117,7 +117,7 @@ class SettingsController extends Controller
         $this->user->profile->update($validate_data);
         $this->user->update($user_data);
 
-        return redirect('settings');
+        return redirect('settings')->with('status', 'Update successful');
     }
 
     /**
