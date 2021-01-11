@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fd1da8d-ddbb-47c0-add6-db770e523276" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/desaid.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/desaid.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/GroupController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Group.Vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/groups/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SettingsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/settings/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/settings/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_18_083907_create_groups_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_18_083907_create_groups_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +201,9 @@
       <workItem from="1609155262522" duration="612000" />
       <workItem from="1609803646278" duration="603000" />
       <workItem from="1609842117742" duration="21000" />
-      <workItem from="1610190766069" duration="430000" />
+      <workItem from="1610190766069" duration="5087000" />
+      <workItem from="1610345797482" duration="639000" />
+      <workItem from="1610383958137" duration="4248000" />
     </task>
     <task id="LOCAL-00001" summary="add new and update migrations">
       <created>1608284071782</created>
@@ -216,7 +226,49 @@
       <option name="project" value="LOCAL" />
       <updated>1608476179020</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="settings update logic">
+      <created>1610191219929</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610191219929</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fix">
+      <created>1610192005147</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610192005147</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Display">
+      <created>1610192302886</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610192302886</updated>
+    </task>
+    <task id="LOCAL-00007" summary="default profile picture handling">
+      <created>1610192630642</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610192630642</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add remove profile_picture">
+      <created>1610193245398</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610193245398</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Redirect">
+      <created>1610193473907</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610193473907</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +278,13 @@
     <MESSAGE value="add new and update migrations" />
     <MESSAGE value="readme" />
     <MESSAGE value="Add controller and views" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add controller and views" />
+    <MESSAGE value="settings update logic" />
+    <MESSAGE value="Fix" />
+    <MESSAGE value="Display" />
+    <MESSAGE value="default profile picture handling" />
+    <MESSAGE value="add remove profile_picture" />
+    <MESSAGE value="Redirect" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redirect" />
   </component>
   <component name="WindowStateProjectService">
     <state x="492" y="73" width="714" height="901" key="#PHP" timestamp="1607780269440">
@@ -245,30 +303,30 @@
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
     <state x="573" y="271" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1680.1022@0.28.1680.1022" timestamp="1608281009965" />
-    <state x="372" y="28" width="925" height="1022" key="CommitChangelistDialog2" timestamp="1608476178653">
+    <state x="372" y="28" width="925" height="1022" key="CommitChangelistDialog2" timestamp="1610193473823">
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
-    <state x="372" y="28" width="925" height="1022" key="CommitChangelistDialog2/0.28.1680.1022@0.28.1680.1022" timestamp="1608476178653" />
-    <state x="623" y="282" width="424" height="484" key="FileChooserDialogImpl" timestamp="1609842137079">
+    <state x="372" y="28" width="925" height="1022" key="CommitChangelistDialog2/0.28.1680.1022@0.28.1680.1022" timestamp="1610193473823" />
+    <state x="623" y="282" width="424" height="484" key="FileChooserDialogImpl" timestamp="1610347105725">
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
-    <state x="623" y="282" width="424" height="484" key="FileChooserDialogImpl/0.28.1680.1022@0.28.1680.1022" timestamp="1609842137079" />
+    <state x="623" y="282" width="424" height="484" key="FileChooserDialogImpl/0.28.1680.1022@0.28.1680.1022" timestamp="1610347105725" />
     <state x="573" y="217" width="523" height="614" key="NewPhpClassDialog" timestamp="1608673733629">
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
     <state x="573" y="217" width="523" height="614" key="NewPhpClassDialog/0.28.1680.1022@0.28.1680.1022" timestamp="1608673733629" />
-    <state x="635" y="444" width="399" height="160" key="NewPhpFileDialog" timestamp="1609102430742">
+    <state x="635" y="444" width="399" height="160" key="NewPhpFileDialog" timestamp="1610194133387">
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
-    <state x="635" y="444" width="399" height="160" key="NewPhpFileDialog/0.28.1680.1022@0.28.1680.1022" timestamp="1609102430742" />
+    <state x="635" y="444" width="399" height="160" key="NewPhpFileDialog/0.28.1680.1022@0.28.1680.1022" timestamp="1610194133387" />
     <state x="321" y="159" key="SettingsEditor" timestamp="1608202822471">
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
     <state x="321" y="159" key="SettingsEditor/0.28.1680.1022@0.28.1680.1022" timestamp="1608202822471" />
-    <state width="498" height="398" key="SwitcherDM" timestamp="1608202184464">
+    <state width="498" height="398" key="SwitcherDM" timestamp="1610194195858">
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
-    <state width="498" height="398" key="SwitcherDM/0.28.1680.1022@0.28.1680.1022" timestamp="1608202184464" />
+    <state width="498" height="398" key="SwitcherDM/0.28.1680.1022@0.28.1680.1022" timestamp="1610194195858" />
     <state x="435" y="256" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1608476245762">
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
@@ -277,9 +335,13 @@
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
     <state x="532" y="192" width="615" height="664" key="find.popup/0.28.1680.1022@0.28.1680.1022" timestamp="1609102413800" />
-    <state x="503" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1609107515450">
+    <state x="504" y="239" key="run.anything.popup" timestamp="1610388828296">
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
-    <state x="503" y="230" width="672" height="678" key="search.everywhere.popup/0.28.1680.1022@0.28.1680.1022" timestamp="1609107515450" />
+    <state x="504" y="239" key="run.anything.popup/0.28.1680.1022@0.28.1680.1022" timestamp="1610388828296" />
+    <state x="503" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1610388968431">
+      <screen x="0" y="28" width="1680" height="1022" />
+    </state>
+    <state x="503" y="230" width="672" height="678" key="search.everywhere.popup/0.28.1680.1022@0.28.1680.1022" timestamp="1610388968431" />
   </component>
 </project>

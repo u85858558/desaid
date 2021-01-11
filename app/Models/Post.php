@@ -9,8 +9,7 @@ class Post extends Model
 {
     use HasFactory;
 
-    protected $connection = 'mongodb';
-    protected $collection = 'post';
+    protected $connection = 'pgsql';
 
     protected $fillable = ['user_id', 'group_id', 'content', 'picture'];
 

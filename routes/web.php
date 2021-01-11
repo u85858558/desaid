@@ -19,11 +19,17 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
 
 Route::middleware('auth')->group(function () {
     Route::get('/settings', 'SettingsController@edit')->name('settings.edit');
 
     Route::patch('/settings', 'SettingsContoller@update')->name('settings.edit');
+
+    //group routes
+    Route::get('/groups/create', 'GroupController@create')
+        ->name('group.create');
+
+    Route::post('/group/', 'GroupController@store')->name('group.store');
 });
