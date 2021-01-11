@@ -7,7 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Group extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'name', 'banner_picture', 'private'
+    ];
 
     // accessor for the banner picture
     public function getBannerPictureAttribute($value) {

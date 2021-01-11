@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fd1da8d-ddbb-47c0-add6-db770e523276" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/GroupController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Group.Vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/groups/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GroupController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Group.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_18_083907_create_groups_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_18_083907_create_groups_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Group.Vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Group.Vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +192,7 @@
       <workItem from="1609842117742" duration="21000" />
       <workItem from="1610190766069" duration="5087000" />
       <workItem from="1610345797482" duration="639000" />
-      <workItem from="1610383958137" duration="4248000" />
+      <workItem from="1610383958137" duration="6825000" />
     </task>
     <task id="LOCAL-00001" summary="add new and update migrations">
       <created>1608284071782</created>
@@ -268,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610193473907</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add a sketch group and fix db">
+      <created>1610389168530</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610389168530</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +280,8 @@
     <MESSAGE value="default profile picture handling" />
     <MESSAGE value="add remove profile_picture" />
     <MESSAGE value="Redirect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redirect" />
+    <MESSAGE value="Add a sketch group and fix db" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a sketch group and fix db" />
   </component>
   <component name="WindowStateProjectService">
     <state x="492" y="73" width="714" height="901" key="#PHP" timestamp="1607780269440">
@@ -303,10 +300,10 @@
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
     <state x="573" y="271" width="524" height="505" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1680.1022@0.28.1680.1022" timestamp="1608281009965" />
-    <state x="372" y="28" width="925" height="1022" key="CommitChangelistDialog2" timestamp="1610193473823">
+    <state x="372" y="28" width="925" height="1022" key="CommitChangelistDialog2" timestamp="1610389168172">
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
-    <state x="372" y="28" width="925" height="1022" key="CommitChangelistDialog2/0.28.1680.1022@0.28.1680.1022" timestamp="1610193473823" />
+    <state x="372" y="28" width="925" height="1022" key="CommitChangelistDialog2/0.28.1680.1022@0.28.1680.1022" timestamp="1610389168172" />
     <state x="623" y="282" width="424" height="484" key="FileChooserDialogImpl" timestamp="1610347105725">
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
@@ -327,10 +324,10 @@
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
     <state width="498" height="398" key="SwitcherDM/0.28.1680.1022@0.28.1680.1022" timestamp="1610194195858" />
-    <state x="435" y="256" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1608476245762">
+    <state x="435" y="256" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1610389177064">
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
-    <state x="435" y="256" width="800" height="536" key="Vcs.Push.Dialog.v2/0.28.1680.1022@0.28.1680.1022" timestamp="1608476245762" />
+    <state x="435" y="256" width="800" height="536" key="Vcs.Push.Dialog.v2/0.28.1680.1022@0.28.1680.1022" timestamp="1610389177064" />
     <state x="532" y="192" width="615" height="664" key="find.popup" timestamp="1609102413800">
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
@@ -339,9 +336,9 @@
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
     <state x="504" y="239" key="run.anything.popup/0.28.1680.1022@0.28.1680.1022" timestamp="1610388828296" />
-    <state x="503" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1610388968431">
+    <state x="503" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1610392114754">
       <screen x="0" y="28" width="1680" height="1022" />
     </state>
-    <state x="503" y="230" width="672" height="678" key="search.everywhere.popup/0.28.1680.1022@0.28.1680.1022" timestamp="1610388968431" />
+    <state x="503" y="230" width="672" height="678" key="search.everywhere.popup/0.28.1680.1022@0.28.1680.1022" timestamp="1610392114754" />
   </component>
 </project>
