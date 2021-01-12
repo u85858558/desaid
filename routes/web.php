@@ -33,3 +33,6 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/group/', 'GroupController@store')->name('group.store');
 });
+
+Route::get('groups/{group}', 'GroupController@show')
+    ->name('groups.show');

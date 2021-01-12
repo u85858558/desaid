@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Group;
 use \Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 use Intervention\Image\Facades\Image;
 
@@ -23,11 +24,12 @@ class GroupController extends Controller
 
     public function store(Request $request)
     {
+        $auth_user = auth()->user();
+
         $validated_data = $request->validate([
             'name' => [
                 'required',
-                'unique:groups',
-                'alpha_dash',
+                'max:30',
             ],
             'banner_picture' => [
                 'image',
@@ -37,8 +39,6 @@ class GroupController extends Controller
             'private' => 'boolean',
             'remove_banner_picture' => 'boolean',
         ]);
-
-        $auth_user = auth()->user();
 
         if ( $request->has('banner_picture') ) {
             $request_file = $request->file('banner_picture');
@@ -62,15 +62,27 @@ class GroupController extends Controller
             );
         }
 
+        $id_string = Str::random(5);
+        while( Group::where('id_string', $id_string)->count() > 0 ) {
+            $id_string = Str::random(5);
+        }
+
         $group = new Group($validated_data);
+        $group->id_string = $id_string;
         $group->owner_id = $auth_user->id;
         $group->save();
 
-        return response('Creating successful.', 200);
+        // add owner to the group
+        $auth_user->memberOfGroups()->attach($group);
+
+        return response()->json(['string_id' => $id_string]);
     }
 
     public function show(Group $group)
-    {}
+    {
+        dd($group->name, $group->id_string, $group->members);
+        return view('groups.show');
+    }
 
     public function edit(Group $group)
     {}
